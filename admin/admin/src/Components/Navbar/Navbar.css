@@ -1,0 +1,40 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  box-shadow: 0 1px 3px -2px #000;
+  margin-bottom: 1px;
+  background: white;
+}
+
+.nav-logo{
+  width: 200px;
+}
+
+.nav-profile{
+  width: 75px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets */
+  .navbar {
+    padding: 15px 30px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-logo {
+    width: 150px; /* Decrease logo size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for phones */
+  .navbar {
+    padding: 15px; /* Adjust padding for even smaller screens */
+  }
+
+  .nav-logo {
+    width: 120px; /* Decrease logo size further for phones */
+  }
+}
