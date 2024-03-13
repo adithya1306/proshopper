@@ -1,0 +1,34 @@
+.offers {
+  display: flex; /* Use flexbox to arrange child elements */
+  margin-top: 180px;
+  background: linear-gradient(180deg, #fde1ff , #e1ffea22 60%);
+  ;
+}
+
+.offers-left,
+.offers-right {
+  flex: 1; /* Equal width for both child divs */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.offers-left {
+  display: flex; /* Use flexbox to center child elements */
+  justify-content: center; /* Center horizontally */
+  align-items: left; /* Center vertically */
+  flex-direction: column; /* Align content vertically */
+}
+
+/* Adjust styles for better appearance */
+.offers-left h2{
+  display: flex;
+  color: #090909;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.offers-left p{
+  display: flex;
+  color: #171717;
+  font-size: 50px;
+  font-weight: 500;
+}

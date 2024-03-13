@@ -1,0 +1,143 @@
+.hero{
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff , #e1ffea22 60%);
+  display: flex;
+}
+
+.hero-left{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
+}
+
+.hero-left h2{
+  display: flex;
+  color: #090909;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.hero-left p{
+  display: flex;
+  color: #171717;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.hero-hand-icon{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+.hero-latest-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+
+.hero-right {
+  display: none; /* Hide right section by default on smaller screens */
+}
+
+#hero-2{
+  margin-top: 180px;
+}
+
+#hero-right-2{
+  margin-right: 100px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  /* Styles for phones */
+  .hero {
+    flex-direction: column-reverse; /* Stack content vertically on smaller screens */
+  }
+
+  .hero-left {
+    padding: 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .hero-left h2 {
+    font-size: 22px; /* Decrease font size for phones */
+  }
+
+  .hero-left p {
+    font-size: 32px; /* Decrease font size for phones */
+  }
+
+  .hero-latest-btn {
+    max-width: 250px; /* Decrease max width for phones */
+    height: 50px; /* Decrease height for phones */
+    font-size: 18px; /* Decrease font size for phones */
+  }
+
+  .hero-right {
+    display: none; /* Hide right section on phones */
+  }
+
+  #hero-2 {
+    margin-top: 30px; /* Decrease margin top for phones */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  .hero-left {
+    padding: 160px; /* Increase padding for tablets */
+    text-align: left; /* Left align text for tablets */
+  }
+
+  .hero-left h2 {
+    font-size: 28px; /* Increase font size for tablets */
+  }
+
+  .hero-left p {
+    font-size: 48px; /* Increase font size for tablets */
+  }
+
+  .hero-hand-icon {
+    gap: 30px; /* Increase gap for tablets */
+  }
+
+  .hero-latest-btn {
+    max-width: 350px; /* Increase max width for tablets */
+    height: 70px; /* Increase height for tablets */
+    font-size: 22px; /* Increase font size for tablets */
+  }
+
+  .hero-right {
+    display: flex; /* Show right section for tablets and larger screens */
+    justify-content: flex-end;
+    align-items: baseline;
+    flex: 1;
+    padding-right: 40px; /* Add padding for tablets */
+  }
+
+  #hero-2 {
+    margin-top: 100px; /* Decrease margin top for tablets */
+  }
+
+  #hero-right-2 {
+    margin-right: 100px; /* Adjust margin right for tablets */
+  }
+}
